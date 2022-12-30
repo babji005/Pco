@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import MainPage from "./Components/MainPage";
+import { BrowserRouter as Router, HashRouter,Switch, Route, Link, Routes } from 'react-router-dom';
+import EmpdetailsPage from './Components/EmpdetailsPage';
+import Header from './Components/Header';
+import Employee from './Components/Employee';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Employee/>
+       {/* <MainPage/> */}
+       {/* <EmpdetailsPage/> */}
+       {/* <Header/> */}
+       <Switch>
+       {/* <Route exact path='/' component={Header}/>
+          <Route exact path='/mainpage' component={MainPage}/>
+          <Route exact path='/empdetails' component={EmpdetailsPage}/> */}
+          {/* <Route exaxt path='/newEmployee' component={Employee}/>     
+          <Route exact path='/listproduct' component={listproduct}/>
+          <Route exaxt path='/addproduct' component={AddProduct}/>  */}
+       </Switch>
+       {/* <EmpdetailsPage/> */}
       </header>
     </div>
+    </Router>
   );
 }
 
