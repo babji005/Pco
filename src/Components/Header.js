@@ -14,18 +14,9 @@ export default class Header extends Component {
                 
               </div>
               <ul class="nav navbar-nav">
-              <li ><Link to={'/mainpage'}>MainPage</Link></li>
-              
-              <li ><Link to={'/empdetails'}>Employee details</Link></li>
-              
-              {/* <li ><Link to={'/newemployee'}> New Employee</Link></li>                                     
+              <li ><Link to={'/'}>EmpDetails</Link></li>
+              <li ><Link to={'/newemployee'}> New Employee</Link></li> 
 
-              <li ><Link to={'/addproduct'}>Add Product</Link></li>
-              
-              <li ><Link to={'/listproduct'}> list Product</Link></li>  */}
-
-
-               
               </ul>
 
              
